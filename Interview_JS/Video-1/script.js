@@ -57,6 +57,52 @@
 // console.log(nums);
 
 
-// Example of Currying
+// Infinite Currying
+// function multiply(x){
+//     return function (y){
+//         if(y) return multiply(x*y);
+//         return x;
+//     }
+// }
+// console.log(multiply(1)(2)(3)(4)())
 
 // Will continue Next Day
+let arr =[1,2,3,4,5,1,2,3];
+const duplicatesNums=(nums)=>{
+    nums.sort((a,b)=>a-b);
+    // 1 1 2 2 3 4 5
+    for(let i=0;i<nums.length;i++){
+        let j=i+1;
+        let hasDuplicate = false;
+        while(nums[i]==nums[j]){
+            hasDuplicate=true;
+            j++;
+        }
+        if(hasDuplicate)console.log(nums[i]);
+        i=j-1;
+    }
+}
+duplicatesNums(arr);
+
+
+// Difference between client site js and server site js 
+
+// object destucturing
+const user ={
+    name:"Priyanshu Yadav",
+    age:23,
+}
+const {name ,age}=user;
+console.log(name,age);
+
+// type of popup boxes in js 
+// diff b/w slice and splice 
+// diff b/w shift ,unshift,pop
+// timers in js 
+// errors in js ->Runtime,refernce error,logical errors ,syntax error
+// difference b/w synchronaus vs asynchronous 
+// promises and async-await which is better 
+// differents evenets in js 
+
+
+
