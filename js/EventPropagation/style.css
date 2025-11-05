@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.green{
+    width: 500px;
+    height: 500px;
+    border: 2px solid white;
+    background-color: green;
+}
+.pink{
+    width: 350px;
+    height: 350px;
+    border: 2px solid white;
+    background-color: pink;
+}
+.blue{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    background-color: blue;
+}
